@@ -813,7 +813,7 @@ class R2:
                 f"{Fore.WHITE+Style.BRIGHT} {balance} {ticker} {Style.RESET_ALL}"
             )
 
-            if not balance:
+            if balance is None:
                 self.log(
                     f"{Fore.CYAN+Style.BRIGHT}   Status   :{Style.RESET_ALL}"
                     f"{Fore.YELLOW+Style.BRIGHT} Fetch {ticker} Token Balance Failed {Style.RESET_ALL}"
@@ -864,7 +864,7 @@ class R2:
                 f"{Fore.WHITE+Style.BRIGHT} {balance} R2USD {Style.RESET_ALL}"
             )
 
-            if not balance:
+            if balance is None:
                 self.log(
                     f"{Fore.CYAN+Style.BRIGHT}   Status   :{Style.RESET_ALL}"
                     f"{Fore.YELLOW+Style.BRIGHT} Fetch R2USD Token Balance Failed {Style.RESET_ALL}"
