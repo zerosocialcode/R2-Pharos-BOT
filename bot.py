@@ -222,7 +222,7 @@ class R2:
             return sell
 
         elif self.swap_option == 3:
-            return random.choice([buy, self])
+            return random.choice([buy, sell])
         
     async def get_web3_with_check(self, address: str, use_proxy: bool, retries=3, timeout=60):
         request_kwargs = {"timeout": timeout}
