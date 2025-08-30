@@ -21,10 +21,10 @@ R2 Pharos BOT
 
 1. **Clone The Repositories:**
    ```bash
-   git clone https://github.com/vonssy/OpenFi-BOT.git
+   git clone https://github.com/vonssy/R2-Pharos-BOT.git
    ```
    ```bash
-   cd OpenFi-BOT
+   cd R2-Pharos-BOT
    ```
 
 2. **Install Requirements:**
