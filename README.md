@@ -12,6 +12,9 @@ R2 Pharos BOT
   - Auto Make R2 Swap Tx
   - Auto Make R2 Earn Tx
   - Multi Accounts
+  - **Check Token Balances Before Running Main Script**  
+    *(Added by [zerosocialcode](https://github.com/zerosocialcode))*  
+    - Use the new `balance.py` script to check the balances of available tokens before starting `bot.py`.
 
 ## Requiremnets
 
@@ -48,7 +51,7 @@ R2 Pharos BOT
 
 ## Configuration
 
-- **accounts.txt:** You will find the file `accounts.txt` inside the project directory. Make sure `accounts.txt` contains data that matches the format expected by the script. Here are examples of file formats:
+- **accounts.txt:** You will find the file `accounts.txt` inside the project directory. Make sure `accounts.txt` contains data that matches the format expected by the script. Here are examples of file[...]
   ```bash
     your_private_key_1
     your_private_key_2
@@ -63,9 +66,16 @@ R2 Pharos BOT
 
 ## Run
 
-```bash
-python bot.py #or python3 bot.py
-```
+1. **Check Balances First (Recommended):**
+   ```bash
+   python balance.py #or python3 balance.py
+   ```
+   This will check the balances of available tokens for all configured accounts before running the main bot.
+
+2. **Run Main Bot:**
+   ```bash
+   python bot.py #or python3 bot.py
+   ```
 
 ## Buy Me a Coffee
 
@@ -78,3 +88,5 @@ Thank you for visiting this repository, don't forget to contribute in the form o
 If you have questions, find an issue, or have suggestions for improvement, feel free to contact me or open an *issue* in this GitHub repository.
 
 **vonssy**
+
+**Update: balance.py script integration and README update by [zerosocialcode](https://github.com/zerosocialcode)**
